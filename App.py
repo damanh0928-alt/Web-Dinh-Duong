@@ -9,7 +9,7 @@ st.markdown("---")
 # Tải dữ liệu từ File Excel
 @st.cache_data
 def load_data():
-    file_path = "Auto_Menu_Dinh_Duong_Lam_Sang.xlsx"
+    file_path = "Auto_Menu_Dinh_Duong_Lam_Sang (1).xlsx"
     db_thucpham = pd.read_excel(file_path, sheet_name="2. Database Thuc Pham")
     db_matran = pd.read_excel(file_path, sheet_name="3. Thuc Don Mau Chuan", header=[0, 1])
     return db_thucpham, db_matran
